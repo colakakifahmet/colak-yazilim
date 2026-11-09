@@ -60,3 +60,28 @@ footer b { color:var(--blue); margin-left:8px; }
   .section-heading { align-items:flex-start; gap:15px; flex-direction:column; }
   footer { padding:22px 7%; gap:12px; flex-direction:column; }
 }
+
+
+/* Web hesap makinesi ve tam C# kaynak kodu */
+.calculator-page { min-height:65vh; }
+.calculator-intro, .source-intro { max-width:700px; color:var(--muted, #9baac5); line-height:1.8; }
+.web-calculator { width:100%; max-width:370px; margin:32px auto 65px; padding:22px; border:1px solid #24558a; border-radius:18px; background:linear-gradient(145deg,#12213b,#0b1427); box-shadow:0 18px 50px #0005,0 0 35px #168dff18; }
+.calculator-heading { display:flex; align-items:center; gap:9px; margin-bottom:18px; color:#73d7ff; font:10px Arial,sans-serif; letter-spacing:1.5px; }
+.calculator-dot { width:8px; height:8px; border-radius:50%; background:#77e4bd; box-shadow:0 0 12px #77e4bd; }
+.calculator-version { margin-left:auto; color:#8296b5; font-size:9px; }
+.calculator-screen { width:100%; height:76px; margin-bottom:16px; padding:12px 15px; box-sizing:border-box; border:1px solid #28466d; border-radius:10px; outline:none; background:#071020; color:#f3f7ff; text-align:right; font:600 28px Consolas,monospace; }
+.calculator-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+.calc-key { min-height:57px; border:1px solid #263e60; border-radius:10px; background:#172744; color:#f3f7ff; font:700 19px Arial,sans-serif; cursor:pointer; }
+.calc-key:hover { border-color:#36a5ff; background:#21416a; }
+.calc-key.utility { color:#9bdfff; background:#183454; }
+.calc-key.operator { color:#73d7ff; background:#12365a; }
+.calc-key.equals { grid-row:span 2; color:#061326; background:linear-gradient(145deg,#36a5ff,#73d7ff); border:0; font-size:24px; }
+.calc-key.zero { grid-column:span 2; }
+.calculator-hint { margin:15px 0 0; color:#8296b5; font-size:10px; line-height:1.6; text-align:center; }
+.source-section { max-width:950px; margin:0 auto 45px; }
+.source-title { display:flex; align-items:end; justify-content:space-between; gap:20px; margin-bottom:18px; }
+.full-source-code { display:block; max-height:760px; overflow:auto; margin:18px 0 14px; padding:22px; border:1px solid #29466c; border-radius:12px; background:#070d19; color:#d9e8ff; font:12px/1.75 Consolas,"Courier New",monospace; white-space:pre; tab-size:4; }
+.source-download { display:inline-block; margin:4px 0 12px; padding:11px 16px; border:1px solid #287dbd; border-radius:9px; color:#9bdfff; text-decoration:none; font-size:12px; font-weight:700; }
+.source-download:hover { background:#12365a; }
+.source-note { color:#8296b5; font-size:11px; line-height:1.7; }
+@media (max-width:760px) { .source-title { align-items:flex-start; flex-direction:column; } .web-calculator { margin-top:25px; } }
